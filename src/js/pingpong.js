@@ -1,4 +1,3 @@
-var bg = document.getElementById('container'); 
 var value = 0; 
 var space_bar = 32; 
 var right_arrow = 39;
@@ -71,18 +70,15 @@ class Ball {
 window.onload = function(){ 
     ball1 = new Ball();
   
-
     ball1.startBall();
 
-   
-  
     window.onkeydown= function(e){ 
         if(e.keyCode === space_bar){ 
             alert("Game Paused")
         }; 
         /** Player 1 */
         // W - Pressed
-        if (e.keyCode === 87 || e.which == 87) {
+        if (e.keyCode === 87 || e.which == 87) { // cross-browser solution
             speedOfPaddle1 = MOVE_BY; // - 
         };
 
@@ -105,7 +101,12 @@ window.onload = function(){
     }; 
 
     window.onkeyup = function(e) { 
-   
+        // Reset
+        if (e.keyCode == 82) {
+            score1 = 0;
+            score2 = 0;
+        }
+
         /** Player 1 */
         // W - Pressed
         if (e.keyCode === 87 || e.which == 87) {
@@ -186,11 +187,8 @@ window.onload = function(){
                 
             }
         }
-
- 
-  
-
-
+        
+        // Manipulate DOM
         document.getElementById('paddle1').style.top = positionOfPaddle1 + 'px';
         document.getElementById('paddle2').style.top = positionOfPaddle2 + 'px';
 
