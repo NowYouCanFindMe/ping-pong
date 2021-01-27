@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ping Pong</title>
+    <link rel="stylesheet" type="text/css" href="/css/styling.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+        rel="stylesheet"
+    />
+    <script src='/js/pingpong.js'></script>
+</head>
+<body>
+    <div id="container" onkeypress="keyboardPressed(e)">
+        <div id="paddle1"></div>
+        <div id="ball"></div>
+        <div id="paddle2"></div>
+        <div class="score-container">
+            <span id="player_1_score">0</span>
+            <span class="divider"> | </span>
+            <span id="player_2_score">0</span>
+        </div>
+        <div class ="instructions">
+            <p> Hit <b>space-bar</b>, to pause the game </p>
+            <p> | Player 1, 'W' and 'S'</p>
+            <p> | Player 2, 'UP' and 'Down'</p>
+        </div>
+    </div>
+</body> 
+
+</html>

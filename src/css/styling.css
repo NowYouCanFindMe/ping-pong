@@ -1,0 +1,51 @@
+.score-container {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  padding: 1rem;
+  transform: translate(-50%, -50%);
+  margin: 0 auto; }
+
+.instructions {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  position: fixed;
+  left: 50%;
+  bottom: 5px;
+  padding: 1rem;
+  transform: translate(-50%, -50%);
+  margin: 0 auto; }
+
+.divider {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+#paddle1 {
+  position: absolute;
+  left: 0px;
+  top: 460px;
+  width: 30px;
+  height: 150px;
+  background-color: red;
+  box-shadow: 0.2px 0.5px 15px #95a5a6; }
+
+#paddle2 {
+  position: absolute;
+  right: 0px;
+  top: 460px;
+  width: 30px;
+  height: 150px;
+  background-color: blue;
+  box-shadow: 0.2px 0.5px 15px #95a5a6; }
+
+#ball {
+  position: absolute;
+  left: 820px;
+  top: 510px;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%; }
